@@ -24,11 +24,15 @@ const app = new Vue({
                 return this.counter = 0;
             }
             return this.counter++;
+        },
+
+        changeImg(index) {
+            return this.counter = index;
         }
     }
 });
 
 for (let i = 0; i < app.images.length; i++) {
-    const markup = `<div class="pallino" data-index="${i}"></div>`;
+    const markup = `<div class="pallino" @click="changeImg(${i})"></div>`;
     document.getElementById("pallini").insertAdjacentHTML("beforeend", markup);    
 }
