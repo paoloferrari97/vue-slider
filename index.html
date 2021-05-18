@@ -18,7 +18,7 @@
         <div id="img">
             <img :src="images[counter]" alt="">
             <div id="pallini">
-                
+                <div class="pallino" @click="changeImg(index)" v-for="(image, index) in images"></div>
             </div>
         </div>
         <div class="next" @click="next">

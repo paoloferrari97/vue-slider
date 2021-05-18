@@ -31,8 +31,3 @@ const app = new Vue({
         }
     }
 });
-
-for (let i = 0; i < app.images.length; i++) {
-    const markup = `<div class="pallino" @click="changeImg(${i})" v-if="(app.counter === ${i})?[blue]"></div>`;
-    document.getElementById("pallini").insertAdjacentHTML("beforeend", markup);    
-}
