@@ -27,3 +27,8 @@ const app = new Vue({
         }
     }
 });
+
+for (let i = 0; i < app.images.length; i++) {
+    const markup = `<div class="pallino" data-index="${i}"></div>`;
+    document.getElementById("pallini").insertAdjacentHTML("beforeend", markup);    
+}
