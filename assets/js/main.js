@@ -35,3 +35,23 @@ const app = new Vue({
         }
     }
 });
+
+document.addEventListener("keyup", (e) => {
+    //console.log(`Key "${e.key}"`);
+    if (e.keyCode == '37') {
+        // left arrow
+        if (app.counter === 0) {
+            app.counter = app.images.length -1;
+        } else {
+            app.counter--;
+        }
+    }
+     else if (e.keyCode == '39') {
+        // right arrow
+        if (app.counter === app.images.length -1) {
+            app.counter = 0;
+        } else {
+            app.counter++;
+        }
+    }
+});
