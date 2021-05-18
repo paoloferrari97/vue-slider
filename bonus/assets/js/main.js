@@ -35,9 +35,13 @@ const app = new Vue({
         }
     },
 
-    mounted: {
-        setInterval(this.next, 3000)
+    mounted() {
+        setInterval(this.next, 3000);
     }
+    //oppure mounted si può scrivere così:
+    /* mounted: function () {
+        setInterval(this.next, 3000);
+    } */
 });
 
 document.addEventListener("keyup", (e) => {
