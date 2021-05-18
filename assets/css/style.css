@@ -4,9 +4,6 @@
   align-items: center;
 }
 
-#app > #img {
-}
-
 #app > div > img {
   width: 600px;
   height: 400px;
@@ -15,4 +12,29 @@
 
 #app > div > i {
   font-size: 50px;
+}
+
+#img {
+  position: relative;
+}
+
+#pallini {
+  width: 200px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.692);
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pallino {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
 }
