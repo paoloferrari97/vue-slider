@@ -28,6 +28,10 @@ const app = new Vue({
 
         changeImg(index) {
             return this.counter = index;
+        },
+
+        changeColor() {
+            return document.querySelector(".pallino").style.backgroundColor = "red";
         }
     }
 });
