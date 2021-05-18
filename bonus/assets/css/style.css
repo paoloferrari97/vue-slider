@@ -1,0 +1,45 @@
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app > div > img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
+#app > div > i {
+  font-size: 50px;
+  padding: 20px;
+}
+
+#img {
+  position: relative;
+}
+
+#pallini {
+  width: 200px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.692);
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pallino {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.active {
+  background-color: blue;
+}
