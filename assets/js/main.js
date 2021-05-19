@@ -29,17 +29,19 @@ const app = new Vue({
         changeImg(index) {
             return this.counter = index;
         }
-    }
-});
+    },
 
-document.addEventListener("keyup", (e) => {
-    //console.log(`Key "${e.key}"`);
-    if (e.keyCode == '37') {
-        // left arrow
-        app.prev();
-    }
-     else if (e.keyCode == '39') {
-        // right arrow
-        app.next();
+    mounted() {
+        document.addEventListener("keyup", (e) => {
+            //console.log(`Key "${e.key}"`);
+            if (e.key == 'ArrowLeft') {
+                // left arrow
+                this.prev();
+            }
+             else if (e.key == 'ArrowRight') {
+                // right arrow
+                this.next();
+            }
+        });
     }
 });
